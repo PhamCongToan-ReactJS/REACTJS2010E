@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background: #edf7f9;
+}
+.wapper {
+    width: 600px;
+    height: 550px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+}
+.wapper .card {
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    background: #f7f7f7;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 5px #ccc;
+    -moz-box-shadow: 0px 5px 20px 5px #ccc;
+    -webkit-box-shadow: 0px 5px 20px 5px #ccc;
+}
+.wapper .card .card__img {
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+.wapper .card .card__img img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.wapper .card .card__title {
+    position: relative;
+}
+.wapper .card .card__title span {
+    width: 0;
+    height: 0;
+    display: block;
+    border: 20px solid #63cde5;
+    margin: 0 auto;
+    border-bottom-width: 0;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.wapper .card .card__title p {
+    text-align: center;
+    font-size: 40px;
+    color: #202020;
+    margin-top: 20px;
+}
+.wapper .card .card__title .card__title__icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 2em;
+    color: #2e2e2e;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -40px;
+    left: 50px;
+    box-shadow: 0px 5px 12px 1px #ccc;
+    -moz-box-shadow: 0px 5px 12px 1px #ccc;
+    -webkit-box-shadow: 0px 5px 12px 1px #ccc;
+}
+.wapper .card .card__title .card__title__icon:hover {
+    cursor: pointer;
+}
+.wapper .card .card__img .card__img__content {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(80, 99, 103, 0.7);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.wapper .card .card__img .card__img__content span {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    user-select: none;
+}
+.wapper .card:hover .card__img__content {
+    opacity: 1;
+}
