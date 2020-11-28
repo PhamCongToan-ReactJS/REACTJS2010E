@@ -1,0 +1,13 @@
+.table__container{
+     width: 500px;
+     min-height: 500px;
+     margin: 50px auto;
+}
+
+table, td {
+     border: 1px solid black;
+   }
+table {
+     width: 100%;
+     border-collapse: collapse;
+   }

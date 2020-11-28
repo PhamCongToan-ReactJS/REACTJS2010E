@@ -1,0 +1,24 @@
+_______Buổi 3________
+--Select: 
+	-Chọn nhiều Option:<select name="" id="" multiple>
+	-Mặc định option:<option value=""  selec</option>
+--input-file: sử dụng Accept:<input type="file" name="" id="" accept="image/*" >
+--input-date:
+	+date:
+	+datetime: không chọn được gì
+	+datetime-local:
+--GET: mọi thông tin đều được đưa lên url
+--Method:
+	+GET : bị giới hạn ký tự trên url, không gửi được ảnh
+	+POST
+	+UPDATE
+	+EELETE
+	+PATCH
+	+OPTION
+-- Gửi hình ảnh: không được dùng method "GET", 
+	+ <form action="" method="POST" enctype="multipart/form-data">: ENCTYLE dùng cho POST
+
+
+---TABLE
+	+colspan: gộp cột
+	+rowspan: gộp dòng
