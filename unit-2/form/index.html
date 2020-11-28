@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập buổi 2: Table & Git</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Đăng ký thành viên</h2>
+    <form action="">
+      <table>
+        <tr>
+          <th id="col">Nội dung</th>
+          <th>Giá trị</th>
+        </tr>
+        <tr>
+          <td>Họ  tên:</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email"></td>
+        </tr>
+        <tr>
+          <td>Mật khẩu:</td>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <td>Avatar:</td>
+          <td><input type="file"></td>
+        </tr>
+        <tr>
+          <td>Số điện thoại:</td>
+          <td><input type="number"></td>
+        </tr>
+        <tr>
+          <td>Tuổi</td>
+          <td>
+            <select name="tuoi" id="tuoi">
+              <option value="">--Chọn tuổi--</option>
+              <option value="1">1 Tuổi</option>
+              <option value="2">2 Tuổi</option>
+              <option value="3">3 Tuổi</option>
+              <option value="4">4 Tuổi</option>
+              <option value="5">5 Tuổi</option>
+              <option value="6">6 Tuổi</option>
+              <option value="7">7 Tuổi</option>
+              <option value="8">8 Tuổi</option>
+              <option value="9">9 Tuổi</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Giới tính:</td>
+          <td>
+            <input type="radio" value="nam" name="gioitinh">
+            <label for="nam"> Nam</label><br>
+            <input type="radio" value="nu" name="gioitinh">
+            <label for="nu">Nữ</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Sở thích:</td>
+          <td>
+            <input type="checkbox" value="soccer" >
+            <label for="soccer">Đá bóng</label><br>
+            <input type="checkbox" value="badminton">
+            <label for="badminton">Cầu lông</label><br>
+            <input type="checkbox" value="sailing">
+            <label for="sailing">Đua thuyền</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Ghi chú:</td>
+          <td><Textarea></Textarea></td>
+        </tr>
+        <tr>
+          <td class="submit" colspan="2" align="center"><input type="submit" value="Đăng ký" name="dangky"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
