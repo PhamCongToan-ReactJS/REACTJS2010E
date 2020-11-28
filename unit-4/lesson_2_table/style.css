@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+.table {
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
+    overflow: scroll;
+}
+table {
+    width: 700px;
+    min-height: 300px;
+    border-collapse: collapse;
+}
+table,
+th,
+td {
+    border: 1px solid #dfe2e6;
+}
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+.table .table__title {
+    background-image: linear-gradient(to right, #8f4882 , #69818e);
+    color: #fff;
+}
+img {
+    width: 10px;
+    margin-left: 5px;
+}
+.table tr:nth-child(3n+0) td {
+    background: #1abc9c;
+}
+.table tr:nth-child(3n+1) td {
+    background: #2ecc71;
+}
+.table tr:nth-child(3n+2) td {
+    background: #3498db;
+}
