@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #27221f;
+    background: #d8a997;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.container {
+    max-width: 900px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: "left right";
+}
+.container__left {
+    width: 300px;
+    padding: 40px 0 0 0;
+    background: #807182;
+    position: relative;
+    text-align: center;
+}
+.container__left h1 {
+    color: #27221f;
+    font-size: 24px;
+    display: inline-block;
+}
+.container__left i {
+    color: #807182;
+    font-size: 24px;
+    margin-right: 5px;
+    padding: 10px;
+    background: #f6b1aa;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.container__left--img {
+    bottom: -29px;
+    position: absolute;
+    text-align: center;
+}
+.container__left .container__left--img img {
+    width: 80%;
+}
+.container__right {
+    width: 500px;
+    background: #fac7c3;
+    display: grid;
+    grid-template-areas: "." ".";
+}
+.container__right .container__right__header {
+    padding: 30px;
+}
+.container__right .container__right__header h1 {
+    color: #27221f;
+    font-size: 2em;
+}
+.container__right .set {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container__right  input {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.container__right  input,
+.container__right  label {
+    color: #27221f;
+}
+.container__right label,
+.container__right input,
+.container__right .pets-photo {
+    width: 200px;
+}
+.container__right .pets-photo {
+    align-items: center;
+    display: grid;
+    grid-template-areas: ". .";
+}
+.container__right .pets-photo button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.container__right .pets-photo button i {
+    color: #27221f;
+    font-size: 1em;
+}
+.container__right .pets-weight .radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pets-name label,
+.pets-upload label,
+.pets-breed label,
+.pets-birthday label,
+.pets-gender label,
+.pets-spayed-neutered label,
+.pets-weight label {
+    display: block;
+    margin-bottom: 5px;
+}
+.radio-container {
+    display: inline-block;
+    background: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc
+}
+.radio-container label {
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 2px;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid transparent;
+}
+.radio-container input[type="radio"] {
+    display: none;
+}
+.radio-container input[type="radio"]:checked + label {
+    background: #f6b1aa;
+    border: 1px solid #ccc;
+}
+.container__right .container__right__bottom {
+    align-items: center;
+    background: #fff;
+    display: grid;
+    padding: 5px 40px;
+}
+.container__right .container__right__bottom button {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px;
+    border: 1px solid #2e2e2e;
+    outline: none;
+}
+.container__right .btn_back {
+    background: #fff;
+    /* transition: 0.1s all ease-in-out; */
+}
+.container__right .btn_back:hover {
+    background: #1e1818;
+    color: #fff;
+}
+.container__right .btn_next {
+    background: #7f7182;
+    border: 1px solid #7f7182;
+    color: #fff;
+}
+.container__right .btn_next:hover {
+    background: #1e1818;
+}

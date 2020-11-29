@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create multi level menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <ul class="menu clearfix">
+        <li class="menu__item--active">
+            <a href=""><i class="fas fa-home"></i> Home</a>
+        </li>
+
+        <li><a href=""><i class="fas fa-cogs"></i> Flyout <i class="fas fa-angle-double-down"></i></a>
+            <ul>
+                <li><a href="">No Layout</a></li>
+                <li><a href="">Layout Left</a></li>
+                <li><a href="">Layout Right <i class="fas fa-angle-double-right"></i></a>
+
+                    <ul>
+                        <li><a href="">Computer</a></li>
+                        <li><a href="">Mobile</a></li>
+                        <li><a href="">Watch</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+
+        <li><a href=""><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href=""><i class="fas fa-briefcase"></i> Portfolio</a></li>
+        <li><a href=""><i class="fas fa-list"></i> Mega Menu</a></li>
+        <li><a href=""><i class="fas fa-bullhorn"></i> Blog</a></li>
+        <li><a href=""><i class="fas fa-image"></i> Images</a></li>
+        <li><a href=""><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+</body>
+</html>
