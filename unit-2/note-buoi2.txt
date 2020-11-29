@@ -1,0 +1,50 @@
+__Layput
+	+Chia Layout
+__Data
+	+Sử lý form
+	+Sử lý data
+__Clean Code(--> rules):
+	+ 1tab = 4 spaces
+
+______________________
+
+__layout: dùng thẻ DIV để chia layout
+	+ Thẻ div là một khối
+	+ thẻ span mặc định dạng INLINE
+
+__Html:
+	+Strict mode(Chế độ nghiêm ngặt)
+	+
+__css:
+	+Ưu tien khai báo trong thẻ HEAD
+	+Khai báo css:
+		.Inline
+		.External
+		.Internal
+	+Độ ưu tiên:
+		.ccs sau đè css trước
+		.độ ưu tiên:	inline > external > internal
+	+ không nên khai báo css bằng INLINE ; chỉ dùng khi muốn sửa phần tử đó	
+	+ Cấu trúc khai báo attribute;
+
+__ Đường dãn tương đối+ đường dẫn tuyệt đối
+
+__ Các câu lệnh cơ bản Github:
+	+git init
+	+git status
+	+git clone
+	+git add và add.
+	+git commit -m ""
+	+git push origin
+	+git log
+
+__ Đưa file lên github
+	+b1:Xác định các file cần đưa lên: 
+		Lệnh : 	git status: Kiểm tra trạng thái file
+			git add: đưa file lên git
+			git reset: reset lại
+	+b2: Viết mô ta khi vừa mới thực hiện
+		Lệnh:	git commit -m "Mô TẢ" ()
+	+b3: git push origin main
+
+	
