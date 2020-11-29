@@ -70,6 +70,7 @@ body {
     grid-row: 13 / 17;
     grid-column: 1 / 4;
 }
+
 .item-45 {
     grid-row: 14 / 18;
     grid-column: 4 / 7;
