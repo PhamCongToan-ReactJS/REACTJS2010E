@@ -4,7 +4,7 @@ function getRepeatingArray(character, number) {
   for (let i = 1; i <= number; i++) {
     result.push(character);
   }
-  console.log(result);
+  return result;
 }
 
 // exercise 1: Solution2
@@ -27,11 +27,11 @@ function getReverseArray(arr) {
 
 // exercise 3: delete false values
 function getTrueValues(arr) {
-  console.log(arr.filter(Boolean));
+  return arr.filter(Boolean);
 }
 
 // exercise 4:
-function convertToObject(data) {
+function converArraytToObject(data) {
   const Obj = {};
   function array(arr) {
     Obj[arr[0]] = arr[1];
@@ -69,12 +69,9 @@ function isObject(obj) {
 
 // exercise 8:
 function getArrDelete(array) {
-  if (array.length >= 5) {
-    array.splice(2, 2);
-    return array;
-  } else {
-    return array;
-  }
+  if (array.length < 5) return;
+  array.splice(2, 2);
+  return array;
 }
 
 // exercise 9:
