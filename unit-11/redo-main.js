@@ -33,12 +33,12 @@ const getTrueValues = arr => {
 
 // Exercise 4:
 const converArraytToObject = data => {
-  const Obj = {};
+  const obj = {};
   function array(arr) {
-    Obj[arr[0]] = arr[1];
+    obj[arr[0]] = arr[1];
   }
   data.forEach(array);
-  return Obj;
+  return obj;
 };
 
 // Exercise 5: Sort the arrays in ascending order

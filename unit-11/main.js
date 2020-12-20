@@ -82,7 +82,7 @@ const students = [
   { id: 4, name: "Vũ Ngọc Duy", score: 6.9 },
   { id: 5, name: "Nguyễn Minh Nhật", score: 5.2 },
   { id: 6, name: "Phí Duy Quân", score: 9.6 },
-  { id: 7, name: "Trần Minh Minh", score: 6.1 },
+  { id: 7, name: "Trần Minh Minh", score: 6.1 }
 ];
 
 function getCheckArrayStudents(students) {
