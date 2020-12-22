@@ -32,14 +32,23 @@ const getTrueValues = arr => {
 };
 
 // Exercise 4:
-const converArraytToObject = data => {
+/* const converArraytToObject = data => {
   const obj = {};
   function array(arr) {
     obj[arr[0]] = arr[1];
   }
   data.forEach(array);
   return obj;
-};
+}; */
+
+const mapArrayToObj = array => {
+  const result = {};
+  array.forEach(item => {
+    const [key, value] = item;
+    result[key] = value;
+  });
+  return result;
+}
 
 // Exercise 5: Sort the arrays in ascending order
 const getArraySortUpAscending = arr => {
@@ -60,21 +69,35 @@ const isObject = value => !!value && value.constructor === Object;
 
 // Exercise 7:
 
-const getObject = (object, array) => {
-  const newObject = {};
-  for (let key in object) {
-    newObject[key] = object[key];
-  }
+// const getObject = (object, array) => {
+//   const newObject = {};
+//   for (let key in object) {
+//     newObject[key] = object[key];
+//   }
 
-  for (let key in newObject) {
-    array.forEach((valueArr) => {
-      if (key === valueArr) {
-        delete newObject[key];
+//   for (let key in newObject) {
+//     array.forEach((valueArr) => {
+//       if (key === valueArr) {
+//         delete newObject[key];
+//       }
+//     });
+//   }
+//   return newObject;
+// };
+
+const pickData = (array, myObj) => {
+  myObj = {...myObj}
+
+  for (let key in myObj) {
+    if (myObj.hasOwnProperty(key)) {
+      if (array.indexOf(key) !== -1) {
+        delete myObj[key]
       }
-    });
+    }
   }
-  return newObject;
-};
+  return myObj;
+}
+
 
 // Exercise 8: Delete element 2,3  if there is more than 5 element
 const getArrDelete = arr => {
