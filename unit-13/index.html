@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My homework unit 13</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="exercise">
+            <h3>Exercise 1:</h3>
+            <div class="hover" onmouseout="getTimeIn()" onmouseleave="getTimeOut()"></div>
+        </div>
+
+        <div class="exercise">
+            <h3>Exercise 2:</h3>
+            <input type="text" id="account" onchange="checkAccount()">
+            <!-- <input type="text" id="account" oninput="checkAccount()"> -->
+        </div>
+
+        <div class="exercise">
+            <h3>Exercise 3:</h3>
+            <input type="text" id="monney" onchange="checkMonney()">
+        </div>
+
+        <div class="exercise">
+            <h3>exercise 4:</h3>
+            <div class="doubleClick" ondblclick="alert('Bạn vừa Double click')"></div>
+        </div>
+
+        <div class="exercise">
+            <h3>Exercise 5:</h3>
+            <input type="text" id="heigh__light" onselect="showHighLightValue()">
+            <p id="heigh__light" onmouseup="showHighLightValue()">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Vel accusantium voluptatem dolore, itaque neque corrupti laudantium maiores a, ex fugit pariatur
+                voluptate sapiente adipisci qui. Maiores quia impedit amet dolorem.</p>
+        </div>
+
+        <div class="exercise">
+            <h3>exercise 6:</h3>
+            <select name="" id="fruit" onchange="validateSelectBox(this)">
+                <option value="">--- Choose fruit ---</option>
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="banana">Banana</option>
+            </select>
+
+            <h5>Danh sách bạn đã chọn:</h5>
+            <div id="result">
+                Bạn chưa chọn chuyên mục nào
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
